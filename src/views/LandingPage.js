@@ -34,10 +34,12 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import IndexHeader from "components/Headers/IndexHeader.js";
+import SectionCarousel from "views/index-sections/SectionCarousel.js";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
+// import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 
 function LandingPage() {
@@ -51,13 +53,18 @@ function LandingPage() {
   return (
     <>
       <ExamplesNavbar />
-      <LandingPageHeader />
+      {/* <LandingPageHeader /> */}
+      {/* <IndexHeader /> */}
+      <SectionCarousel />
       <div className="main">
-        <div className="section text-center">
+        <div
+          className="section text-center"
+          style={{ padding: "20px 0 70px 0", backgroundColor: "#D8FDF5" }}
+        >
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
+                <h2 className="title">IGOOANA</h2>
                 <h5 className="description">
                   This is the paragraph where you can write more details about
                   your product. Keep you user engaged by providing meaningful
@@ -80,7 +87,10 @@ function LandingPage() {
             <br />
             <Row>
               <Col md="3">
-                <div className="info">
+                <div
+                  className="info"
+                  style={{ backgroundColor: "#DAE7DE", borderRadius: "20px" }}
+                >
                   <div className="icon icon-info">
                     <i className="nc-icon nc-album-2" />
                   </div>
@@ -97,7 +107,10 @@ function LandingPage() {
                 </div>
               </Col>
               <Col md="3">
-                <div className="info">
+                <div
+                  className="info"
+                  style={{ backgroundColor: "#DAE7DE", borderRadius: "20px" }}
+                >
                   <div className="icon icon-info">
                     <i className="nc-icon nc-bulb-63" />
                   </div>
@@ -114,7 +127,10 @@ function LandingPage() {
                 </div>
               </Col>
               <Col md="3">
-                <div className="info">
+                <div
+                  className="info"
+                  style={{ backgroundColor: "#DAE7DE", borderRadius: "20px" }}
+                >
                   <div className="icon icon-info">
                     <i className="nc-icon nc-chart-bar-32" />
                   </div>
@@ -131,7 +147,10 @@ function LandingPage() {
                 </div>
               </Col>
               <Col md="3">
-                <div className="info">
+                <div
+                  className="info"
+                  style={{ backgroundColor: "#DAE7DE", borderRadius: "20px" }}
+                >
                   <div className="icon icon-info">
                     <i className="nc-icon nc-sun-fog-29" />
                   </div>
@@ -150,7 +169,10 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <div className="section section-dark text-center">
+        <div
+          className="section section-dark text-center"
+          style={{ backgroundColor: "#112C22" }}
+        >
           <Container>
             <h2 className="title">Let's talk about us</h2>
             <Row>
@@ -320,7 +342,14 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <div className="section landing-section">
+        <div
+          // className="section landing-section"
+          className="section section-image"
+          style={{
+            backgroundImage:
+              "url(" + require("assets/img/login-image.jpg").default + ")",
+          }}
+        >
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">

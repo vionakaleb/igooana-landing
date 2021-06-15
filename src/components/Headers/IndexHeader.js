@@ -38,7 +38,7 @@ function IndexHeader() {
         <div className="content-center">
           <Container>
             <div className="title-brand">
-              <h1 className="presentation-title">Paper Kit React</h1>
+              <h1 className="presentation-title">IGOOANA</h1>
               <div className="fog-low">
                 <img
                   alt="..."
@@ -64,7 +64,7 @@ function IndexHeader() {
               "url(" + require("assets/img/clouds.png").default + ")",
           }}
         />
-        <h6 className="category category-absolute">
+        {/* <h6 className="category category-absolute">
           Designed and coded by{" "}
           <a
             href="https://www.creative-tim.com?ref=pkr-index-page"
@@ -76,7 +76,7 @@ function IndexHeader() {
               src={require("assets/img/creative-tim-white-slim2.png").default}
             />
           </a>
-        </h6>
+        </h6> */}
       </div>
     </>
   );

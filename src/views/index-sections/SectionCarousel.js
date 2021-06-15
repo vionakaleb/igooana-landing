@@ -75,11 +75,18 @@ function SectionCarousel() {
   };
   return (
     <>
-      <div className="section pt-o" id="carousel">
-        <Container>
-          <Row>
-            <Col className="ml-auto mr-auto" md="8">
-              <Card className="page-carousel">
+      <div className="pt-o" id="carousel">
+        <Container
+          className="m-0 p-0 w-100"
+          style={{
+            width: "100vw",
+            maxWidth: "100%",
+            filter: "brightness(0.5)",
+          }}
+        >
+          <Row className="m-0 p-0">
+            <Col md="12" className="m-0 p-0">
+              <Card className="page-carousel" style={{ marginBottom: 0 }}>
                 <Carousel
                   activeIndex={activeIndex}
                   next={next}
@@ -97,10 +104,41 @@ function SectionCarousel() {
                         onExited={onExited}
                         key={item.src}
                       >
-                        <img src={item.src} alt={item.altText} />
+                        <div className="title-brand">
+                          <div className="fog-low">
+                            <img
+                              alt="..."
+                              src={require("assets/img/fog-low.png").default}
+                            />
+                          </div>
+                          <div className="fog-low right">
+                            <img
+                              alt="..."
+                              src={require("assets/img/fog-low.png").default}
+                            />
+                          </div>
+                        </div>
+                        <img
+                          style={{
+                            height: "50vh",
+                            width: "100vw",
+                            borderRadius: 0,
+                          }}
+                          src={item.src}
+                          alt={item.altText}
+                        />
                         <CarouselCaption
                           captionText={item.caption}
                           captionHeader=""
+                        />
+                        <div
+                          className="moving-clouds"
+                          style={{
+                            backgroundImage:
+                              "url(" +
+                              require("assets/img/clouds.png").default +
+                              ")",
+                          }}
                         />
                       </CarouselItem>
                     );

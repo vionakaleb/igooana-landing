@@ -54,7 +54,7 @@ function SectionDownload() {
               <p className="description">
                 We're going to launch{" "}
                 <a className="text-danger" href="#pablo" disabled>
-                  Paper Kit PRO React in a few weeks
+                  IGOOANA
                 </a>
                 . It will have a huge number of components, sections and example
                 pages.

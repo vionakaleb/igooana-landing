@@ -30,7 +30,7 @@ function NucleoIcons() {
   return (
     <>
       <header>
-        <h1>Paper Kit React Icons</h1>
+        <h1>Icons</h1>
         <p>
           Built with{" "}
           <a href="https://nucleoapp.com/?ref=1712" target="_blank">

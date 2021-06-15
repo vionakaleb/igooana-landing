@@ -33,9 +33,9 @@ function SectionNucleoIcons() {
               <h2 className="title">Nucleo Icons</h2>
               <br />
               <p className="description">
-                Paper Kit comes with 100 custom icons made by our friends from
+                IGOOANA comes with 100 custom icons made by our friends from
                 NucleoApp. The official package contains over 2.100 thin icons
-                which are looking great in combination with Paper Kit Make sure
+                which are looking great in combination with IGOOANA. Make sure
                 you check all of them and use those that you like the most.
               </p>
               <br />

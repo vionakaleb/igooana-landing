@@ -75,10 +75,10 @@ function ExamplesNavbar() {
             data-placement="bottom"
             to="/index"
             target="_blank"
-            title="Coded by Creative Tim"
+            title="IGOOANA"
             tag={Link}
           >
-            Paper Kit 2
+            IGOOANA
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}

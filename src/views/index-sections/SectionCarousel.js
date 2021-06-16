@@ -34,19 +34,24 @@ import {
 
 const items = [
   {
-    src: require("assets/img/soroush-karimi.jpg").default,
-    altText: "Somewhere",
-    caption: "Somewhere",
+    src: "https://miro.medium.com/max/1024/0*dMlL1Geu8ZZGCgP6.jpg",
+    altText: "MARKET BISNIS ANALISIS",
+    caption: "MARKET BISNIS ANALISIS",
   },
   {
-    src: require("assets/img/federico-beccari.jpg").default,
-    altText: "Somewhere else",
-    caption: "Somewhere else",
+    src: "https://image.cermati.com/q_70,w_1200,h_800,c_fit/ojeknobvbhvg2txrvri4",
+    altText: "DISTRIBUTOR",
+    caption: "DISTRIBUTOR",
   },
   {
-    src: require("assets/img/joshua-stannard.jpg").default,
-    altText: "Here it is",
-    caption: "Here it is",
+    src: "https://majapahit.id/wp-content/uploads/2021/01/Apa-itu-warehouse-management-system.jpg",
+    altText: "WAREHOUSE MANAGEMENT",
+    caption: "WAREHOUSE MANAGEMENT",
+  },
+  {
+    src: "https://springup.co.id/wp-content/uploads/2019/02/HR-Human-Resources-Management.jpg",
+    altText: "HR MANAGEMENT",
+    caption: "HR MANAGEMENT",
   },
 ];
 
@@ -120,7 +125,7 @@ function SectionCarousel() {
                         </div>
                         <img
                           style={{
-                            height: "50vh",
+                            height: "80vh",
                             width: "100vw",
                             borderRadius: 0,
                           }}

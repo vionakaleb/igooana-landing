@@ -141,7 +141,7 @@ function LandingPage() {
                 </Button>
               </Col>
             </Row>
-            <hr className="bg-secondary" />
+            <hr style={{ borderColor: "#66615b" }} />
             <br />
             <br />
             <Row className="mb-5">
@@ -176,7 +176,7 @@ function LandingPage() {
               <Col
                 className="ml-auto mr-auto my-5"
                 md="8"
-                style={{ border: "1px solid #9A9A9A", borderRadius: "20px" }}
+                style={{ border: "1px solid #66615b", borderRadius: "20px" }}
               >
                 <h2 className="title my-5">WHY IGOOANA?</h2>
                 <h5 className="text-justify pr-3">

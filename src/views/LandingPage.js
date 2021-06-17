@@ -87,24 +87,24 @@ function LandingPage() {
 
   const mainTeam = [
     {
-      name: "Analyst",
-      category: "Business Analyst",
+      name: "Principle",
+      category: null,
       description:
-        "Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.",
+        "— Memuaskan kebutuhan, keinginan, dan tuntutan client. Profitabilitas: Menghasilkan keuntungan untuk bisnis untuk mendukung pertumbuhan yang berkelanjutan.",
       image: "clem-onojeghuo-3.jpg",
     },
     {
-      name: "Developer",
-      category: "Application Developer",
+      name: "Distributor",
+      category: null,
       description:
-        "Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.",
+        "— Menyalurkan barang maupun jasa ke konsumen. Menjadi fasilitator supaya konsumen mudah memperoleh barang atau jasa dari produsen.",
       image: "joe-gardner-2.jpg",
     },
     {
-      name: "Tester",
-      category: "QA Tester",
+      name: "Agency",
+      category: null,
       description:
-        "Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.",
+        "— Bertujuan untuk mendekati permintaan oleh pengguna industri atau rumah tangga konsumen, meningkatkan kinerja pemasaran penjualan kembali.",
       image: "erik-lucatero-2.jpg",
     },
   ];
@@ -226,7 +226,7 @@ function LandingPage() {
           style={{ backgroundColor: "#112C22" }}
         >
           <Container>
-            <h2 className="title">Let's talk about us</h2>
+            <h2 className="title">Selling Point</h2>
             <Row>
               {mainTeam.map((team) => (
                 <Col md="4">

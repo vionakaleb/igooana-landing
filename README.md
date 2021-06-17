@@ -1,4 +1,4 @@
-# [IGOOANA]
+# IGOOANA LANDING
 
 ## Quick start
 

@@ -1,7 +1,5 @@
 # [IGOOANA]
 
-(https://raw.githubusercontent.com/creativetimofficial/public-assets/master/paper-kit-react/opt_pk_react_thumbnail.jpg)
-
 ## Quick start
 
 1.  Download the project's zip

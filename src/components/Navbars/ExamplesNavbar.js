@@ -34,7 +34,7 @@ import {
 } from "reactstrap";
 
 function ExamplesNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [navbarColor, setNavbarColor] = React.useState("bg-dark");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
   const toggleNavbarCollapse = () => {
@@ -53,7 +53,7 @@ function ExamplesNavbar() {
         document.documentElement.scrollTop < 300 ||
         document.body.scrollTop < 300
       ) {
-        setNavbarColor("navbar-transparent");
+        setNavbarColor("bg-dark");
       }
     };
 
@@ -78,7 +78,12 @@ function ExamplesNavbar() {
             title="IGOOANA"
             tag={Link}
           >
-            IGOOANA
+            <img
+              className="mt-0 p-0"
+              alt="IGOOANA"
+              width="150px"
+              src={require("assets/img/igooana_logo.png").default}
+            />
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -98,7 +103,7 @@ function ExamplesNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <NavItem>
+            {/* <NavItem>
               <NavLink to="/index" tag={Link}>
                 <i className="nc-icon nc-layout-11" /> Components
               </NavLink>
@@ -110,11 +115,11 @@ function ExamplesNavbar() {
               >
                 <i className="nc-icon nc-book-bookmark" /> Documentation
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
+                href=""
                 target="_blank"
                 title="Follow us on Twitter"
               >
@@ -125,7 +130,7 @@ function ExamplesNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                href=""
                 target="_blank"
                 title="Like us on Facebook"
               >
@@ -136,7 +141,7 @@ function ExamplesNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                href=""
                 target="_blank"
                 title="Follow us on Instagram"
               >
@@ -147,7 +152,7 @@ function ExamplesNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
+                href=""
                 target="_blank"
                 title="Star on GitHub"
               >
@@ -159,10 +164,10 @@ function ExamplesNavbar() {
               <Button
                 className="btn-round"
                 color="danger"
-                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar"
+                href="http://igooana.id:8080/login"
                 target="_blank"
               >
-                <i className="nc-icon nc-spaceship"></i> Upgrade to Pro
+                <i className="nc-icon nc-spaceship"></i> Go to IGOOANA
               </Button>
             </NavItem>
           </Nav>

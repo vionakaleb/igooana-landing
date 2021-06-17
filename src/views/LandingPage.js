@@ -123,13 +123,13 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto my-5" md="8">
-                {/* <h2 className="title">IGOOANA</h2> */}
                 <img
                   className="mt-5 mb-3"
                   alt="IGOOANA"
-                  src="http://igooana.id:8080/images/igooana_logo.png?cb832e7f606853289c1ccb00af3b4a4a"
+                  src={require("assets/img/igooana_logo.png").default}
                 />
-                <h5 className="description">{mainDescription}</h5>
+                <h2 className="title">SIMPLY AND SIMPLIFY</h2>
+                <h5>{mainDescription}</h5>
                 <br />
                 <Button
                   className="btn-round"
@@ -141,9 +141,10 @@ function LandingPage() {
                 </Button>
               </Col>
             </Row>
+            <hr className="bg-secondary" />
             <br />
             <br />
-            <Row>
+            <Row className="mb-5">
               {mainBusiness.map((bus) => (
                 <Col md="3">
                   <div
@@ -172,9 +173,13 @@ function LandingPage() {
               ))}
             </Row>
             <Row>
-              <Col className="ml-auto mr-auto my-5" md="8">
+              <Col
+                className="ml-auto mr-auto my-5"
+                md="8"
+                style={{ border: "1px solid #9A9A9A", borderRadius: "20px" }}
+              >
                 <h2 className="title my-5">WHY IGOOANA?</h2>
-                <h5 className="description text-justify">
+                <h5 className="text-justify pr-3">
                   <ol>
                     <li className="my-3">
                       We are a national multidisciplinary organisation allowing
@@ -205,7 +210,7 @@ function LandingPage() {
                 </h5>
                 <br />
                 <Button
-                  className="btn-round"
+                  className="btn-round mb-5"
                   color="info"
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
@@ -294,7 +299,7 @@ function LandingPage() {
                 <Form className="contact-form">
                   <Row>
                     <Col md="6">
-                      <label>Name</label>
+                      {/* <label>Name</label> */}
                       <InputGroup>
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
@@ -305,7 +310,7 @@ function LandingPage() {
                       </InputGroup>
                     </Col>
                     <Col md="6">
-                      <label>Email</label>
+                      {/* <label>Email</label> */}
                       <InputGroup>
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
@@ -318,15 +323,20 @@ function LandingPage() {
                   </Row>
                   <label>Message</label>
                   <Input
-                    placeholder="Tell us your thoughts and feelings..."
+                    placeholder="Tell us your thoughts..."
                     type="textarea"
                     rows="4"
                   />
                   <Row>
                     <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
-                        Send Message
-                      </Button>
+                      <a
+                        href="mailto:indolima@indonesia5.com"
+                        action="mailto:indolima@indonesia5.com"
+                      >
+                        <Button className="btn-fill" color="danger" size="lg">
+                          Send Message
+                        </Button>
+                      </a>
                     </Col>
                   </Row>
                 </Form>

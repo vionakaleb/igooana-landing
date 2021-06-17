@@ -30,26 +30,17 @@ function DemoFooter() {
           <nav className="footer-nav">
             <ul>
               <li>
-                <a
-                  href="https://www.creative-tim.com?ref=pkr-footer"
-                  target="_blank"
-                >
+                <a href="" target="_blank">
                   IGOOANA
                 </a>
               </li>
               <li>
-                <a
-                  href="http://blog.creative-tim.com/?ref=pkr-footer"
-                  target="_blank"
-                >
+                <a href="" target="_blank">
                   Blog
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.creative-tim.com/license?ref=pkr-footer"
-                  target="_blank"
-                >
+                <a href="" target="_blank">
                   Licenses
                 </a>
               </li>

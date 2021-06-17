@@ -57,7 +57,7 @@ function LandingPage() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       link: "MARKET BISNIS ANALISIS",
-      image: "nc-album-2",
+      image: "nc-chart-bar-32",
     },
     {
       title: "DISTRIBUTOR",
@@ -71,7 +71,7 @@ function LandingPage() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       link: "WAREHOUSE MANAGEMENT",
-      image: "nc-chart-bar-32",
+      image: "nc-album-2",
     },
     {
       title: "HR MANAGEMENT",
@@ -148,7 +148,7 @@ function LandingPage() {
               {mainBusiness.map((bus) => (
                 <Col md="3">
                   <div
-                    className="info"
+                    className="info pt-2"
                     style={{ backgroundColor: "#DAE7DE", borderRadius: "20px" }}
                   >
                     <div className="icon icon-info">
